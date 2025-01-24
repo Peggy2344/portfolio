@@ -73,6 +73,7 @@ const profolioProjects = [
           </div>
           <div class="flex gap-5 md:mt-10">
             <a
+              v-if="project.repo"
               class="flex items-center gap-1 group"
               :href="project.repo"
               target="_blank"
@@ -84,6 +85,7 @@ const profolioProjects = [
               <p class="text-white group-hover:underline">repository</p>
             </a>
             <a
+              v-if="project.live"
               class="flex items-center gap-1 cursor-pointer group"
               :href="project.live"
               target="_blank"
