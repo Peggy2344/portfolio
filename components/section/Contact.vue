@@ -10,7 +10,7 @@ const { scale } = defineProps({
 <template>
   <ClientOnly>
     <div class="md:m-10 z-[1] bg-primary md:bg-lightBlack">
-      <GrainCard class-name="h-[100vh] md:h-[calc(100vh-80px)] bg-primary rounded-br-[120px] lg:rounded-br-[196px] md:mt-[40px]">
+      <GrainCard class-name="h-[100vh] md:h-[calc(100vh-80px)] bg-primary md:rounded-br-[120px] lg:rounded-br-[196px] md:mt-[40px]">
         <div class="flex items-center justify-center">
           <TextHoverEffect
             class="w-[100%] md:w-[60%] max-w-[1000px]"
