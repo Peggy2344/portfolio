@@ -6,7 +6,6 @@
     viewBox="0 0 350 100"
     xmlns="http://www.w3.org/2000/svg"
     class="select-none"
-    :style="transformStyle"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
     @mousemove="handleMouseMove"
@@ -212,7 +211,6 @@ const handleScroll = () => {
 
   // Determine scroll direction
   const isScrollingDown = currentScrollY > lastScrollY.value
-  console.log(currentScrollY)
   // Update scale based on scroll direction
   if (isScrollingDown && currentScrollY > 100) {
     // Scale up when scrolling down (reduced maximum scale)
@@ -236,12 +234,6 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
-
-// Smooth out the transformation with a longer duration
-const transformStyle = computed(() => ({
-  transform: `scale(${scale.value})`,
-  transition: 'transform 0.2s ease-out', // Increased duration for smoother effect
-}))
 </script>
 
 <style scoped>
