@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import svgLoader from 'vite-svg-loader'
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? '/portfolio/' : ''
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -11,6 +13,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   devtools: { enabled: true },
+  app: {
+    baseURL: routerBase,
+  },
   css: ['~/assets/main.css'],
   compatibilityDate: '2024-11-01',
   vite: {
