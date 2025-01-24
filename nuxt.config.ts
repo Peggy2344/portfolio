@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   ],
   devtools: { enabled: true },
   app: {
-    baseURL: '/portfolio/',
+    baseURL: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/portfolio/' : '/',
     buildAssetsDir: '/assets/',
   },
   css: ['~/assets/main.css'],
