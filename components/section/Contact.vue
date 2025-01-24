@@ -27,10 +27,11 @@ const currentYear = computed(() => new Date().getFullYear())
               :style="{ transform: `scale(${scale})` }"
             />
           </div>
-          <div class="flex flex-col gap-10 mt-auto mb-10 ml-10">
+          <div class="flex flex-col gap-10 mt-auto mb-10 md:ml-10">
             <div class="container flex justify-center md:justify-start">
               <NavBar
                 :items="items"
+                class="text-center md:text-left"
               />
             </div>
             <div class="container flex items-center justify-center md:justify-start">
