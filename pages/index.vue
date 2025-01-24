@@ -8,8 +8,10 @@ const triggerPoint = ref(0)
 const vh = ref(0)
 
 onMounted(() => {
-  updateMeasurements()
   window.addEventListener('resize', updateMeasurements)
+  nextTick(() => {
+    updateMeasurements()
+  })
 })
 
 const homeStyle = computed(() => {
@@ -37,7 +39,7 @@ const contactScale = computed(() => {
 
   const scrollProgress = Math.max(0, Math.min(1, (y.value - triggerPoint.value) / vh.value))
   const scale = 1 + (1 - scrollProgress) * 1.5
-  return Math.min(scale, 3)
+  return Math.min(scale, 2)
 })
 
 function updateMeasurements() {
