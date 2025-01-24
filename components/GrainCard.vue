@@ -2,6 +2,9 @@
 import type { CSSProperties } from 'vue'
 import { twMerge } from 'tailwind-merge'
 
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
+
 const props = defineProps<{
   className?: string
   style?: CSSProperties
@@ -20,7 +23,7 @@ const classNames = twMerge(
   >
     <div
       class="absolute inset-0 -z-10 opacity-15"
-      style="background-image: url('/images/grain.jpg');"
+      :style="`background-image: url('${baseURL}images/grain.jpg');`"
     />
     <slot />
   </div>
