@@ -60,11 +60,11 @@ const navItems = [
         <div class="absolute bottom-0 w-full -translate-x-1/2 left-1/2">
           <div class="absolute bottom-0 w-full -translate-x-1/2 left-1/2">
             <div class="flex flex-col items-center justify-center lg:pr-20 lg:justify-end lg:flex-row">
-              <h1 class="text-lightBlack text-[50px] md:text-[70px] lg:text-[100px] font-bold leading-[180px] tracking-wider">
+              <h1 class="text-lightBlack text-[50px] md:text-[70px] lg:text-[90px] font-bold leading-[180px] tracking-wider">
                 Hi, I'm
               </h1>
               <TextHoverEffect
-                class="w-[100%] md:w-[70%] lg:w-[40%]"
+                class="w-[100%] md:w-[70%] lg:w-[45%]"
                 text="FANG YU"
                 :opacity="1"
                 :style="{ transform: `scale(${scale})` }"
