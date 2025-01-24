@@ -1,6 +1,6 @@
 <template>
   <nav :class="variant === 'secondary' ? 'bg-secondary' : ''">
-    <ul class="flex flex-col gap-8 p-0 list-none md:gap-12 md:flex-row">
+    <ul class="flex flex-col gap-6 p-0 list-none md:gap-12 md:flex-row">
       <li
         v-for="item in items"
         :key="item.href"
@@ -11,7 +11,7 @@
             'nav-link',
             variant === 'secondary' ? 'nav-link-secondary' : 'nav-link-primary',
           ]"
-          @click.prevent="scrollToSection(item.href)"
+          @click.prevent="handleClick(item)"
         >
           {{ item.text }}
         </a>
@@ -37,6 +37,15 @@ const scrollToSection = (href) => {
   const element = document.querySelector(href)
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
+const handleClick = (item) => {
+  if (item.type === 'link') {
+    window.open(item.href, '_blank')
+  }
+  else {
+    scrollToSection(item.href)
   }
 }
 </script>
