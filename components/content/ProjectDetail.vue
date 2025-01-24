@@ -1,4 +1,7 @@
 <script setup>
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
+
 const profolioProjects = [
   {
     company: 'CryptoVibe',
@@ -9,7 +12,7 @@ const profolioProjects = [
     repo: 'https://github.com/Peggy2344/crypto-dashboard',
     backendRepo: 'https://github.com/Peggy2344/crypto-dashboard-backend',
     live: 'https://crypto-dashboard-two-psi.vercel.app/',
-    image: '/images/crypto-vibe.png',
+    image: `${baseURL}images/crypto-vibe.png`,
     type: 'desktop',
   },
   {
@@ -20,7 +23,7 @@ const profolioProjects = [
     tools: ['Vue2', 'Vuex', 'Node.js', 'MongoDB', 'Express', 'Vuetify'],
     repo: 'https://github.com/Peggy2344/hiker',
     live: 'https://peggy2344.github.io/hiker/#/',
-    image: '/images/hiker.png',
+    image: `${baseURL}images/hiker.png`,
     type: 'desktop',
   },
   {
@@ -30,7 +33,7 @@ const profolioProjects = [
     description: 'Developed a LINE messaging bot that provides instant English-Thai translations and news updates, integrating Longdo Dictionary API for translations and NewsAPI for real-time news delivery.',
     tools: ['LINE Messaging API', 'Node.js', 'Longdo Dictionary API', 'NewsAPI'],
     repo: 'https://github.com/Peggy2344/linebot',
-    image: '/gif/translate-linebot.gif',
+    image: `${baseURL}gif/translate-linebot.gif`,
     type: 'phone',
   },
 ]
