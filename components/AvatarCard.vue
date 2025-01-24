@@ -43,10 +43,10 @@ const positionClasses = computed(() => ({
         </text>
       </svg>
     </div>
-    <NuxtImg
+    <img
       src="/images/avatar.jpg"
       class="w-full h-full rounded-full"
-    />
+    >
   </GrainCard>
 </template>
 
