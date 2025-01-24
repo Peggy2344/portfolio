@@ -107,11 +107,11 @@ const profolioProjects = [
           />
           <div
             v-if="project.type === 'phone'"
-            class="w-full p-10 mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full"
+            class="w-full mt-8 -mb-4 lg:w-auto md:-mb-0 lg:relative h-[300px] lg:h-[350px] flex items-center justify-center"
           >
             <iPhoneMockUp
               :src="project.image"
-              class="max-w-sm size-full h-fit"
+              class="w-auto h-full max-h-[300px] lg:max-h-[350px] object-contain "
             />
           </div>
         </div>
