@@ -3,14 +3,14 @@ import { ref } from 'vue'
 
 const experiences = ref([
   {
-    company: '今網智慧',
+    company: 'KNST CO., LTD',
     period: 'MAR 2021 - JUL 2024',
-    title: '前端工程師',
-    description: '負責公司產品的APP及網站的開發與維護工作，並在產品中導入Sentry進行錯誤監控並在團隊中進行教育訓練。',
+    title: 'Frontend Engineer',
+    description: 'Responsible for developing and maintaining company products including apps and websites. Implemented Sentry for error monitoring and conducted team training.',
     lists: [
-      '與後端工程師、UI/UX 設計師及行銷部門協同合作，負責【智生活 App、廠商版 App、智樂家官網】的開發與維護，主要使用 Vue.js 和 Nuxt，並使用 Cordova 開發 App。',
-      '內部系統開發與維護：開發多個內部系統網站，使用 Vue.js 架構',
-      '錯誤追蹤：使用 Sentry 和 Firebase Crashlytics 進行應用程式錯誤的追蹤和修正',
+      'Collaborated with backend engineers, UI/UX designers, and marketing team to develop and maintain Apps and Websites using Vue.js and Nuxt, with Cordova for app development.',
+      'Internal Systems: Developed and maintained multiple internal system websites using Vue.js framework',
+      'Error Tracking: Implemented error tracking and resolution using Sentry and Firebase Crashlytics',
     ],
     technologies: ['Vue3', 'React', 'Node.js', 'Sentry'],
   },
