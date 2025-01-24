@@ -8,13 +8,13 @@ const { title } = defineProps({
 </script>
 
 <template>
-  <div class="border border-1 border-primary">
-    <GrainCard class-name="flex items-center justify-center bg-primary h-[80px]">
-      <h3 class="text-3xl font-bold text-lightBlack">
+  <div class="border border-1 border-primary rounded-xl">
+    <GrainCard class-name="flex items-center justify-center bg-primary h-[80px] rounded-t-xl">
+      <h3 class="text-2xl font-bold md:text-3xl text-lightBlack">
         {{ title }}
       </h3>
     </GrainCard>
-    <GrainCard class-name="p-5 text-lg bg-lightBlack text-lightPurple">
+    <GrainCard class-name="text-lg bg-lightBlack text-lightPurple rounded-b-xl p-4 md:py-8 md:px-6">
       <slot name="content" />
     </GrainCard>
   </div>

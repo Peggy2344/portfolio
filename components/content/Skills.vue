@@ -31,13 +31,13 @@ const combineSkills = computed(() => {
 </script>
 
 <template>
-  <div class="p-6">
+  <div class="flex flex-col gap-4">
     <div
       v-for="skill in combineSkills"
       :key="skill.name"
-      class="flex flex-col gap-2 p-4"
+      class="flex flex-col gap-1"
     >
-      <h3 class="text-2xl text-primary">
+      <h3 class="text-xl md:text-2xl text-primary">
         {{ skill.name }}
       </h3>
       <div>

@@ -1,40 +1,3 @@
-<!-- ExperienceBlock.vue -->
-<template>
-  <div>
-    <div
-      v-for="(exp, index) in experiences"
-      :key="index"
-      class="grid grid-cols-7 gap-2"
-    >
-      <div class="col-span-2">
-        <p class="text-sm text-gray-400">
-          {{ exp.period }}
-        </p>
-      </div>
-      <div class="grid col-span-5 gap-2">
-        <p class="font-bold text-white">
-          {{ exp.title }}
-        </p>
-        <p class="mb-2 text-gray-400">
-          {{ exp.company }}
-        </p>
-        <p class="text-sm text-gray-300">
-          {{ exp.description }}
-        </p>
-        <ul class="space-y-2 text-sm text-gray-300 list-disc list-inside">
-          <li
-            v-for="(list, listI) in exp.lists"
-            :key="listI"
-            class="tracking-wide"
-          >
-            {{ list }}
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup>
 import { ref } from 'vue'
 
@@ -53,3 +16,43 @@ const experiences = ref([
   },
 ])
 </script>
+
+<template>
+  <div>
+    <div
+      v-for="(exp, index) in experiences"
+      :key="index"
+      class="grid grid-cols-1 gap-2"
+    >
+      <div class="grid">
+        <div class="flex flex-col justify-between mb-4 md:flex-row">
+          <div>
+            <h2 class="mb-1 text-xl font-bold text-white">
+              {{ exp.title }}
+            </h2>
+            <h3 class="text-gray-300 text-md">
+              {{ exp.company }}
+            </h3>
+          </div>
+          <p class="mt-2 text-sm text-gray-400 md:mt-0 md:text-right">
+            {{ exp.period }}
+          </p>
+        </div>
+        <div>
+          <p class="text-sm leading-relaxed text-gray-300">
+            {{ exp.description }}
+          </p>
+          <ul class="space-y-2 text-sm text-gray-300 list-disc list-inside">
+            <li
+              v-for="(list, listI) in exp.lists"
+              :key="listI"
+              class="tracking-wide"
+            >
+              {{ list }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
