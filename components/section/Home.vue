@@ -25,27 +25,11 @@ const navItems = [
       :style="style"
     >
       <div class="contents">
-        <GrainCard class-name="w-[200px] h-[200px] lg:w-[384px] lg:h-[384px] bg-primary rounded-full border-lightBlack border-2 flex items-center justify-center lg:p-[70px] p-[30px] absolute md:top-[40px] md:left-[40px] top-[40px] left-[50%] translate-x-[-50%] md:translate-x-0 z-[1]">
-          <div class="absolute w-full h-full rotating-text">
-            <svg
-              viewBox="0 0 100 100"
-              class="w-full h-full"
-            >
-              <path
-                id="textPath"
-                d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-                fill="none"
-              />
-              <text class="text-[10px] tracking-[0.01em] fill-lightBlack">
-                <textPath href="#textPath">FRONTEND DEVELOPER  </textPath>
-              </text>
-            </svg>
-          </div>
-          <NuxtImg
-            src="/images/avatar.jpg"
-            class="w-full h-full rounded-full"
-          />
-        </GrainCard>
+        <AvatarCard
+          position="top-left"
+          rotating-text="FRONTEND DEVELOPER"
+          class-name="z-[1]"
+        />
       </div>
       <GrainCard
         class-name="h-full bg-primary md:rounded-tl-[120px] lg:rounded-tl-[196px] pt-[260px] md:pt-0"
