@@ -11,6 +11,7 @@
             'nav-link',
             variant === 'secondary' ? 'nav-link-secondary' : 'nav-link-primary',
           ]"
+          @click.prevent="scrollToSection(item.href)"
         >
           {{ item.text }}
         </a>
@@ -24,7 +25,6 @@ defineProps({
   items: {
     type: Array,
     required: true,
-    // expects: [{ href: '#home', text: 'Home' }, ...]
   },
   variant: {
     type: String,
@@ -32,6 +32,13 @@ defineProps({
     validator: value => ['primary', 'secondary'].includes(value),
   },
 })
+
+const scrollToSection = (href) => {
+  const element = document.querySelector(href)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script>
 
 <style lang="postcss">

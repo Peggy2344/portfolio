@@ -54,21 +54,25 @@ function updateMeasurements() {
 <template>
   <GrainCard class-name="relative w-full mx-auto overflow-visible h-min bg-lightBlack">
     <SectionHome
+      id="home"
       :scale="homeScale"
       :style="homeStyle"
     />
     <GrainCard class-name="relative z-10 bg-lightBlack overflow-visible">
-      <SectionAboutMe />
+      <SectionAboutMe id="about" />
     </GrainCard>
     <GrainCard class-name="relative z-10 bg-lightBlack overflow-visible">
-      <SectionProject />
+      <SectionProject id="project" />
     </GrainCard>
     <div
+      id="contact"
       ref="contactRef"
       class="h-[100vh] z-1"
     />
     <GrainCard class-name="fixed top-0 bottom-0 left-0 right-0 z-0 overflow-visible bg-lightBlack">
-      <SectionContact :scale="contactScale" />
+      <SectionContact
+        :scale="contactScale"
+      />
     </GrainCard>
   </GrainCard>
 </template>
