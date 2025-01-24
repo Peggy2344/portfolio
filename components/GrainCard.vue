@@ -3,11 +3,11 @@ import { twMerge } from 'tailwind-merge'
 
 const props = defineProps<{
   className?: string
-  style?: string
+  style?: object
 }>()
 
 const classNames = twMerge(
-  'bg-gray-800 relative after:content-[\'\'] after:absolute  z-0 overflow-hidden ',
+  'bg-lightBlack relative after:content-[\'\'] after:absolute z-[0] overflow-hidden ',
   props.className,
 )
 </script>
