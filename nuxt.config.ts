@@ -15,8 +15,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     baseURL: routerBase,
+    buildAssetsDir: '/assets/',
   },
   css: ['~/assets/main.css'],
+  experimental: {
+    payloadExtraction: false,
+  },
   compatibilityDate: '2024-11-01',
   vite: {
     plugins: [
