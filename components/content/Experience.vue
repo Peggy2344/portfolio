@@ -12,7 +12,7 @@ const experiences = ref([
       'Internal Systems: Developed and maintained multiple internal system websites using Vue.js framework',
       'Error Tracking: Implemented error tracking and resolution using Sentry and Firebase Crashlytics',
     ],
-    technologies: ['Vue3', 'React', 'Node.js', 'Sentry'],
+    technologies: ['Vue', 'React', 'Node.js', 'Sentry'],
   },
 ])
 </script>

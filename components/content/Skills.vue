@@ -4,7 +4,7 @@ import type { Skill } from '@/types/skills'
 const skills = ref<Skill[]>([
   {
     name: 'Frontend',
-    lists: ['Vue3', 'Nuxt', 'Typescript', 'Tailwind', 'Cordova'],
+    lists: ['Vue', 'Nuxt', 'Typescript', 'Tailwind', 'Cordova'],
   },
   {
     name: 'Backend',

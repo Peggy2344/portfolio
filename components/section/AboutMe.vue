@@ -9,7 +9,7 @@
           About Me
         </h1>
         <p class="text-lg leading-8 text-gray-300">
-          I am a frontend engineer with over three years of experience, primarily working with Vue3 and Nuxt. I have also worked with React and Node.js, and my future goal is to progress towards becoming a full-stack engineer.
+          I am a frontend engineer with over three years of experience, primarily working with Vue and Nuxt. I have also worked with React and Node.js, and my future goal is to progress towards becoming a full-stack engineer.
         </p>
       </BlurReveal>
     </div>
