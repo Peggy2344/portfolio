@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import type { CSSProperties } from 'vue'
 import { twMerge } from 'tailwind-merge'
 
 const props = defineProps<{
   className?: string
-  style?: object
+  style?: CSSProperties
 }>()
 
 const classNames = twMerge(
