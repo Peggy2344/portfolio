@@ -48,15 +48,18 @@ const navItems = [
         </GrainCard>
       </div>
       <GrainCard
-        class-name="h-full bg-primary md:rounded-tl-[120px] lg:rounded-tl-[196px]"
+        class-name="h-full bg-primary md:rounded-tl-[120px] lg:rounded-tl-[196px] pt-[260px] md:pt-0"
       >
-        <div class="md:flex md:items-center md:justify-end md:p-12">
-          <NavBar :items="navItems" />
+        <div class="flex items-center justify-center md:justify-end md:p-12">
+          <NavBar
+            :items="navItems"
+            class="text-center md:text-left"
+          />
         </div>
         <div class="absolute bottom-0 w-full -translate-x-1/2 left-1/2">
           <div class="absolute bottom-0 w-full -translate-x-1/2 left-1/2">
             <div class="flex flex-col items-center justify-center lg:pr-20 lg:justify-end lg:flex-row">
-              <h1 class="text-lightBlack text-[50px] md:text-[70px] lg:text-[90px] font-bold leading-[180px] tracking-wider">
+              <h1 class="text-lightBlack text-[50px] md:text-[70px] lg:text-[90px] font-bold leading-[180px] tracking-wider hidden md:block">
                 Hi, I'm
               </h1>
               <TextHoverEffect
