@@ -20,10 +20,6 @@ const navItems = [
 
 <template>
   <ClientOnly>
-    <!-- <div
-      ref="el"
-      class="h-[100vh] md:h-[calc(100vh-80px)] md:rounded-tl-[196px] sticky top-[40px]md:px-10 z-[1]"
-    > -->
     <GrainCard
       class-name="sticky top-0 z-[1] h-[100vh] w-full transform-perspective-[1200px] will-change-transform bg-lightBlack md:p-10"
       :style="style"
@@ -73,7 +69,6 @@ const navItems = [
           </div>
         </div>
       </GrainCard>
-    <!-- </div> -->
     </GrainCard>
   </ClientOnly>
 </template>
