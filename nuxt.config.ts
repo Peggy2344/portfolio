@@ -13,7 +13,31 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     baseURL: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/portfolio/' : '/',
-    buildAssetsDir: '/assets/',
+    head: {
+      viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
+      title: 'Fang Yu - Portfolio',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'description', content: 'Fang Yu - Frontend Developer Portfolio. Showcasing web development projects and skills in Vue.js, Nuxt, and modern web technologies.' },
+
+        // Open Graph / Facebook
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://peggy2344.github.io/portfolio/' },
+        { property: 'og:title', content: 'Fang Yu - Portfolio' },
+        { property: 'og:description', content: 'Fang Yu - Frontend Developer Portfolio. Showcasing web development projects and skills in modern web technologies.' },
+        { property: 'og:image', content: 'https://peggy2344.github.io/portfolio/images/logo.png' },
+
+        // Twitter
+        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:url', content: 'https://peggy2344.github.io/portfolio/' },
+        { property: 'twitter:title', content: 'Fang Yu - Portfolio' },
+        { property: 'twitter:description', content: 'Fang Yu - Frontend Developer Portfolio. Showcasing web development projects and skills in modern web technologies.' },
+        { property: 'twitter:image', content: 'https://peggy2344.github.io/portfolio/images/logo.png' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
   },
   css: ['~/assets/main.css'],
   experimental: {
