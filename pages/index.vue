@@ -58,11 +58,17 @@ function updateMeasurements() {
       :scale="homeScale"
       :style="homeStyle"
     />
-    <GrainCard class-name="relative z-10 bg-lightBlack overflow-visible">
-      <SectionAboutMe id="about" />
+    <GrainCard
+      id="about"
+      class-name="relative z-10 bg-lightBlack overflow-visible"
+    >
+      <SectionAboutMe />
     </GrainCard>
-    <GrainCard class-name="relative z-10 bg-lightBlack overflow-visible">
-      <SectionProject id="project" />
+    <GrainCard
+      id="project"
+      class-name="relative z-10 bg-lightBlack overflow-visible"
+    >
+      <SectionProject />
     </GrainCard>
     <div
       id="contact"
