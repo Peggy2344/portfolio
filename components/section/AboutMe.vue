@@ -1,12 +1,12 @@
 <template>
   <ClientOnly>
-    <GrainCard class-name="px-6 md:p-10 pt-10 bg-lightBlack relative pt-[96px] h-fit overflow-visible gap-10 lg:container grid grid-cols-1 md:grid-cols-2">
+    <GrainCard class-name="px-6 md:p-10 lg:px-0 pt-10 bg-lightBlack relative pt-[96px] h-fit overflow-visible gap-10 lg:container grid grid-cols-1 md:grid-cols-2">
       <div class="sticky top-[20px] md:top-[96px] h-min col-span-1">
         <BlurReveal
           :delay="0.2"
           :duration="0.75"
         >
-          <h1 class="text-[50px] lg:text-[80px] font-bold text-center md:text-left text-primary mb-5">
+          <h1 class="text-[50px] lg:text-[80px] lg:leading-[100px] font-bold text-center md:text-left text-primary mb-5">
             About Me
           </h1>
           <p class="text-lg leading-8 text-gray-300">
