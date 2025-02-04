@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     baseURL: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/portfolio/' : '/',
-    buildAssetsDir: process.env.DEPLOY_ENV === 'GH_PAGES' ? 'assets' : '',
+    buildAssetsDir: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/assets/' : '',
     head: {
       viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
       title: 'Fang Yu - Portfolio',
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
         { property: 'twitter:image', content: 'https://peggy2344.github.io/portfolio/images/logo.png' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
       ],
     },
   },
